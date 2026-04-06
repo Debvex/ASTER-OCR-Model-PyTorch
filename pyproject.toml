@@ -1,0 +1,24 @@
+[project]
+name = "ocr-model-pytorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+	"torch",
+	"torchvision",
+	"numpy",
+	"matplotlib",
+	"pillow",
+
+	# Training and inference helpers
+	"tqdm",
+	"tensorboard",
+
+	# Dataset support
+	"scipy",
+
+	# SageMaker job launch and AWS access from a notebook/local machine
+	"sagemaker",
+	"boto3",
+]
